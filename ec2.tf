@@ -1,10 +1,4 @@
-provider "aws" {
 
-  region = "us-east-2"
-
-}
-
-[root@ip-172-31-9-184 armaan-project-master]# cat ec2.tf
 resource "aws_instance" "web" {
  ami = "ami-026dea5602e368e96"
  instance_type = "t2.micro"
